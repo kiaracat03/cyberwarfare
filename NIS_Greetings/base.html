@@ -196,9 +196,7 @@
                 <div class="sub-menu-row">
                   <div class="sub-menu-box">
                     <div class="sub-menu-title">
-                      <a
-                        href="/NIS_Greetings/base.html"
-                        class="font-gray01"
+                      <a href="/NIS_Greetings/base.html" class="font-gray01"
                         >Director's Greetings</a
                       >
                       <div class="divider bg-gray04"></div>
@@ -208,25 +206,19 @@
               </div>
               <div class="sub-menu-list row" id="menu2">
                 <div class="sub-menu-row has-child">
-                  <div class="sub-menu-box">
-                  </div>
+                  <div class="sub-menu-box"></div>
 
                   <div class="sub-menu-box">
                     <div class="sub-menu-title">
-                      <a
-                        href="Cyber_Hierarchy.html"
-                        class="font-gray01"
+                      <a href="Cyber_Hierarchy.html" class="font-gray01"
                         >Cyber-Hierarchy Chart Page</a
                       >
                       <div class="divider bg-gray04"></div>
                     </div>
-                    
                   </div>
 
                   <div class="sub-menu-box">
-                    <div class="sub-menu-title">
-          
-                    </div>
+                    <div class="sub-menu-title"></div>
                   </div>
                 </div>
               </div>
@@ -234,9 +226,7 @@
                 <div class="sub-menu-row last">
                   <div class="sub-menu-box">
                     <div class="sub-menu-title">
-                      <a
-                        href="Mission_Statement.html"
-                        class="font-gray01"
+                      <a href="Mission_Statement.html" class="font-gray01"
                         >Operatives Page</a
                       >
                       <div class="divider bg-gray04"></div>
@@ -479,108 +469,17 @@
       <!-- //header -->
 
       <!-- ---------------------------------------------- container ----------------------------------------------->
-      <div id="container" class="key-visual03">
-        <div class="column">
-          <div class="location center-align">
-            <span>HOME</span>
-          </div>
-          <div class="hgroup">
-            <h2>
-              Introduction of NIS - Home Page<!-- <img src="/resources/img/heading/h2-nis01.png" alt="Director’s Message" /> -->
-            </h2>
-          </div>
-
-          <!-- contents-wrap -->
-          <div id="contents-wrap" class="clearfix">
-            <!-- lnb -->
-            <!-- [s] : 22-06-14 -->
-            <!-- contents -->
-            <div id="contents" class="contents center-align dutivision">
-              <!-- [s] 변경사항 -->
-              <h3><span>Director’s Greetings</span></h3>
-
-              <section class="greetings">
-                <div class="cont_bnr">
-                  <img
-                    src="./Greetings _ Introduction of NIS _ NIS NATIONAL INTELLIGENCE SERVICE_files/greet_banner_en.jpg"
-                    alt="greetings"
-                  />
-                  <img
-                    src="./Greetings _ Introduction of NIS _ NIS NATIONAL INTELLIGENCE SERVICE_files/greet_banner_en_mb.jpg"
-                    alt="greetings"
-                  />
-                </div>
-
-                <h2 class="cont_tit">
-                  Dear esteemed guests,<br /><span
-                    >I am Taeyong Cho, the Director of the National Intelligence
-                    Service,</span
-                  >
-                  and I extend my warmest greetings to you.
-                </h2>
-
-                <!-- 2024-07-30 추가&수정[s] -->
-                <p class="cont_txt">
-                  Serving as the leading intelligence agency of the Republic of
-                  Korea and positioned at the forefront of security, economic,
-                  and technological conflicts, the NIS bears the responsibility
-                  of protecting our nation's security and interests.<br /><br />
-                  Our primary missions encompass gathering foreign intelligence,
-                  including that pertaining to North Korea; conducting
-                  counterterrorism and counterintelligence activities;
-                  performing security investigations; and addressing
-                  transnational crimes and industrial technology theft.<br
-                    class="pBr"
-                  />
-                  We proactively tackle new security challenges in cyberspace,
-                  the economy, and space.<br /><br />
-                  As a unified team, every NIS officer is dedicated to
-                  excellence, aiming to position ourselves as a leading and
-                  trustworthy intelligence organization.<br /><br />
-                  As you browse our website, we encourage you to discover the
-                  wide range of initiatives we carry out. We also hope that this
-                  platform helps you gain a thorough understanding of national
-                  security.<br /><br />
-                  Thank you.
-                </p>
-                <!-- 2024-07-30 추가&수정[e] -->
-                <div class="cont_bnr">
-                  <img
-                    src="./Greetings _ Introduction of NIS _ NIS NATIONAL INTELLIGENCE SERVICE_files/nis_hq.jpg"
-                    alt="greetings"
-                  />
-                  <img
-                    src="./Greetings _ Introduction of NIS _ NIS NATIONAL INTELLIGENCE SERVICE_files/greet_banner_en_mb.jpg"
-                    alt="greetings"
-                  />
-                </div>
-
-                <!-- <p class="cont_name">Taeyong Cho <span>Director</span></p> -->
-              </section>
-
-              <!-- [e] 변경사항 -->
-            </div>
-          </div>
-      
-
-          <!-- //contents-wrap -->
-
-          <!-- scroll-to-top -->
-
-          <!-- scroll-to-top -->
-          <div id="scroll-to-top" style="width: 100%; opacity: 0.5">
-            <div class="quick-gnb" style="right: 155px">
-              <a href="https://eng.nis.go.kr/EID/1_1.do#gnb"
-                ><img
-                  src="./Greetings _ Introduction of NIS _ NIS NATIONAL INTELLIGENCE SERVICE_files/btn-top.png"
-                  alt="scroll top"
-              /></a>
-            </div>
-          </div>
-          <!-- //scroll-to-top -->
-          <!-- //scroll-to-top -->
-        </div>
-      </div>
+      <!-- JavaScript to load content dynamically -->
+      <script>
+        function loadContent(page) {
+          fetch(page) // fetch the content of the provided page
+            .then((response) => response.text()) // convert the response to plain text
+            .then((data) => {
+              document.getElementById("container").innerHTML = data; // insert the content into the container div
+            })
+            .catch((error) => console.error("Error loading content:", error)); // log any errors
+        }
+      </script>
       <!-- ---------------------------------------------- container ----------------------------------------------->
     </div>
 
